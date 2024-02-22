@@ -10,7 +10,7 @@ source:
   sha256: 4ee947f5c6b258a9b242691a78b2565416e53863209ff1ba176fba0da011f4c2
   patches:
     - fix-protobuf-test-fail.patch
-    - fix-protobuf-test-fail.patch
+    - remove-asyncio.patch
 
 build:
   noarch: python
