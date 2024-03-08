@@ -1,5 +1,5 @@
 {% set name = "injective-py" %}
-{% set version = "1.3.1" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/InjectiveLabs/sdk-python/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 07fb3d7c635fae7f1696525a74b2ad2fee884faa4ea7f40b26b23e88c8be7fbf
+  sha256: 4881946f0ca0e756680ddc71b793b7667d576bd68d271937e86ff482f0e2d05d
   patches:
     - fix-protobuf-test-fail.patch
 
