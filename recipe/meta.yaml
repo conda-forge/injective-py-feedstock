@@ -10,36 +10,29 @@ source:
   sha256: 829489369d66618fb1a190111b92f52e0de58d74c10efb312621d21b67af6fa0
   patches:
     - fix-protobuf-test-fail.patch
+    - clean-lib-dependencies.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vvv
-  number: 0
+  number: 1
 
 requirements:
   host:
+    - aiohttp
     - python >=3.9.0
-    - coincurve
     - pip
     - poetry
   run:
-    - aiocron
-    - aiohttp
     - bech32
     - bip32
-    - coincurve
     - ecdsa
     - eip712
     - grpcio
-    - grpcio-tools
-    - hdwallets
     - mnemonic
-    - protobuf
     - python >=3.9.0
     - requests
     - safe-pysha3
-    - urllib3 >=1.26.18,<2
-    - websockets
     - web3 >=6
 
 test:

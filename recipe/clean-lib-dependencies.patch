@@ -1,0 +1,25 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index 767c9e8..c987bbe 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -25,18 +25,14 @@ python = "^3.9"
+ aiohttp = "*"
+ bech32 = "*"
+ bip32 = "*"
+-coincurve = "*"
+ ecdsa = "*"
+ eip712 = "*"
++eth-account = "*"
+ grpcio = "*"
+-grpcio-tools = "*"
+-hdwallets = "*"
++hexbytes = "*"
+ mnemonic = "*"
+-protobuf = "*"
+ requests = "*"
+ safe-pysha3 = "*"
+-urllib3 = ">=1.26.18,<2"
+-websockets = "*"
+ web3 = "^6.0"
+ 
+ [tool.poetry.group.test.dependencies]
