@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - aiohttp
+    - aiohttp >=3.9.2
     - python >=3.9.0
     - pip
     - poetry
