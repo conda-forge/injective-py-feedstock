@@ -15,7 +15,7 @@ index 767c9e8..c987bbe 100644
 -hdwallets = "*"
 +hexbytes = "*"
  mnemonic = "*"
--protobuf = "*"
+-protobuf = "<5"
  requests = "*"
  safe-pysha3 = "*"
 -urllib3 = "*"
