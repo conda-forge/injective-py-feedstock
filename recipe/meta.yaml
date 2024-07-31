@@ -30,6 +30,7 @@ requirements:
     - eip712
     - grpcio
     - mnemonic
+    - protobuf >=5.26.1
     - python >=3.9.0
     - requests
     - safe-pysha3
