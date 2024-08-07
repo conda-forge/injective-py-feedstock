@@ -2,7 +2,7 @@ diff --git a/pyproject.toml b/pyproject.toml
 index 767c9e8..c987bbe 100644
 --- a/pyproject.toml
 +++ b/pyproject.toml
-@@ -29,18 +29,8 @@
+@@ -29,10 +29,8 @@
  eip712 = "*"
 +eth-account = "*"
  grpcio = "*"
