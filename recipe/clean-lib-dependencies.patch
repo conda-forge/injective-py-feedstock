@@ -2,12 +2,7 @@ diff --git a/pyproject.toml b/pyproject.toml
 index 767c9e8..c987bbe 100644
 --- a/pyproject.toml
 +++ b/pyproject.toml
-@@ -25,18 +25,14 @@
- aiohttp = ">=3.9.2" # Version dependency due to https://github.com/InjectiveLabs/sdk-python/security/dependabot/18
- bech32 = "*"
- bip32 = "*"
--coincurve = "*"
- ecdsa = "*"
+@@ -29,18 +29,8 @@
  eip712 = "*"
 +eth-account = "*"
  grpcio = "*"
@@ -18,8 +13,5 @@ index 767c9e8..c987bbe 100644
 -protobuf = ">=5.26.1"
  requests = "*"
  safe-pysha3 = "*"
--urllib3 = "*"
 -websockets = "*"
  web3 = "^6.0"
- 
- [tool.poetry.group.test.dependencies]
