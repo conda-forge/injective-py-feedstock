@@ -48,7 +48,7 @@ test:
     - requests-mock
   commands:
     - pip check
-    # - pytest -v
+    - pytest -v
 
 about:
   home: https://github.com/InjectiveLabs/sdk-python
