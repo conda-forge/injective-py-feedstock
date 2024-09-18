@@ -51,8 +51,8 @@ test:
     - requests-mock
   commands:
     - pip check
-    - poetry run python examples/exchange_client/spot_exchange_rpc/8_StreamOrders.py
-    - poetry run python examples/chain_client/1_MsgSend.py
+    - poetry run python examples/exchange_client/spot_exchange_rpc/8_StreamOrderbookUpdate.py
+    - poetry run python examples/chain_client/3_MessageBroadcaster.py
     - poetry run pytest -v
 
 about:
