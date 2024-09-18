@@ -41,6 +41,7 @@ test:
   source_files:
     - tests
     - examples
+    - pyproject.toml
   requires:
     - pip
     - poetry
