@@ -1,6 +1,7 @@
 {% set name = "injective-py" %}
 {% set version = "1.8.0" %}
 
+{% set python_min = "3.9" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -20,9 +21,9 @@ build:
 requirements:
   host:
     - aiohttp >=3.9.2
-    - python >=3.9.0
+    - python >={{ python_min }}
     - pip
-    - poetry
+    - poetry-core
   run:
     - bech32
     - bip32
@@ -30,7 +31,7 @@ requirements:
     - eip712
     - grpcio
     - mnemonic
-    - python >=3.9.0
+    - python >={{ python_min }}
     - requests
     - safe-pysha3
     - web3 >=6
@@ -48,6 +49,7 @@ test:
     - pytest
     - pytest-asyncio
     - pytest-grpc
+    - python >={{ python_min }}
     - requests-mock
   commands:
     - pip check
