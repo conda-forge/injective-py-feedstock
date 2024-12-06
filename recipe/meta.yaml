@@ -27,6 +27,7 @@ requirements:
   run:
     - bech32
     - bip32
+    - ckzg
     - ecdsa
     - eip712
     - grpcio
