@@ -11,7 +11,7 @@ source:
   sha256: 60a309ad2984c13eb71f2d9f266237ef6bba6e7ac03852a05857de37a7894884
   patches:
     - fix-protobuf-test-fail.patch
-    # - clean-lib-dependencies.patch
+    - clean-lib-dependencies.patch
 
 build:
   noarch: python
