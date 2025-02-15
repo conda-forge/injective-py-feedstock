@@ -35,7 +35,7 @@ requirements:
     - python >={{ python_min }}
     - requests
     - safe-pysha3
-    - web3 >=6
+    - web3 >=7,<8
 
 test:
   imports:
