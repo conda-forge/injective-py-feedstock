@@ -27,7 +27,7 @@ requirements:
   run:
     - bech32
     - bip32
-    - ckzg <2
+    # - ckzg <2
     - ecdsa
     - eip712
     - grpcio
@@ -35,7 +35,7 @@ requirements:
     - python >={{ python_min }}
     - requests
     - safe-pysha3
-    - web3 >=6
+    - web3 >=7
 
 test:
   imports:
