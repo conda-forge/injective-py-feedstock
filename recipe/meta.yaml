@@ -1,7 +1,7 @@
 {% set name = "injective-py" %}
 {% set version = "1.9.1" %}
 
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -27,7 +27,7 @@ requirements:
   run:
     - bech32
     - bip32
-    # - ckzg <2
+    - ckzg <2
     - ecdsa
     - eip712
     - grpcio
@@ -35,7 +35,7 @@ requirements:
     - python >={{ python_min }}
     - requests
     - safe-pysha3
-    - web3 >=6.0.0,<8.0.0
+    - web3 >=7.0.0,<8.0.0
 
 test:
   imports:
