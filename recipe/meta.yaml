@@ -1,7 +1,7 @@
 {% set name = "injective-py" %}
 {% set version = "1.9.1" %}
 
-{% set python_min = "3.10" %}
+# {% set python_min = "3.10" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -14,7 +14,8 @@ source:
     - clean-lib-dependencies.patch
 
 build:
-  noarch: python
+  # noarch: python
+  skip: true  # [py < 39]
   script: {{ PYTHON }} -m pip install . -vvv
   number: 0
 
@@ -23,7 +24,7 @@ requirements:
     - aiohttp >=3.9.2
     - pip
     - poetry-core
-    - python {{ python_min }} *_cpython
+    - python
   run:
     - bech32
     - bip32
@@ -33,7 +34,7 @@ requirements:
     - eth-abi >=5.0.1,<5.2.0
     - grpcio
     - mnemonic
-    - python >={{ python_min }} *_cpython
+    - python
     - requests
     - safe-pysha3
     - web3 >=7.0.0,<7.6.0
@@ -51,7 +52,7 @@ test:
     - pytest
     - pytest-asyncio
     - pytest-grpc
-    - python {{ python_min }}
+    - python
     - requests-mock
   commands:
     - pip check
