@@ -29,7 +29,8 @@ requirements:
     - bip32
     - ckzg
     - ecdsa
-    - eip712
+    - eip712 >=0.2.7
+    - eth-abi >=5.0.1
     - grpcio
     - mnemonic
     - python >={{ python_min }}
