@@ -23,20 +23,20 @@ requirements:
     - aiohttp >=3.9.2
     - pip
     - poetry-core
-    - python {{ python_min }}
+    - python {{ python_min }} *_cpython
   run:
     - bech32
     - bip32
     - ckzg
     - ecdsa
     - eip712 >=0.2.7
-    - eth-abi >=5.0.1
+    - eth-abi >=5.0.1,<5.2.0
     - grpcio
     - mnemonic
-    - python >={{ python_min }}
+    - python >={{ python_min }} *_cpython
     - requests
     - safe-pysha3
-    - web3 >=7.0.0,<8.0.0
+    - web3 >=7.0.0,<7.6.0
 
 test:
   imports:
