@@ -30,14 +30,15 @@ requirements:
     - bip32
     - ckzg
     - ecdsa
-    - eip712 >=0.2.7
-    - eth-abi >=5.0.1,<5.2.0
+    - eip712
+    - eth-abi
     - grpcio
     - mnemonic
     - python
     - requests
     - safe-pysha3
-    - web3 >=7.0.0,<7.6.0
+    - web3 >=6.0.0,<7.0.0  # [py <= 310]
+    - web3 >=7.0.0,<7.6.0  # [py > 310]
 
 test:
   imports:
