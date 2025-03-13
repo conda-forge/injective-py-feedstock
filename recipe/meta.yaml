@@ -28,7 +28,7 @@ requirements:
   run:
     - bech32
     - bip32
-    - ckzg
+    - ckzg <2
     - ecdsa
     - eip712
     - eth-abi
