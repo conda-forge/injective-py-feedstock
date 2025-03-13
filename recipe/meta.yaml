@@ -10,8 +10,8 @@ source:
   url: https://github.com/InjectiveLabs/sdk-python/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 0f0add094fc0d2973dc8038677b5c041ef6466d296d40d645a55b1dd756c18d9
   patches:
-    - fix-protobuf-test-fail.patch
-    - clean-lib-dependencies.patch
+    - patches/fix-protobuf-test-fail.patch
+    - patches/clean-lib-dependencies.patch
 
 build:
   # noarch: python
@@ -21,7 +21,7 @@ build:
 
 requirements:
   host:
-    - aiohttp >=3.9.2
+    - aiohttp >=3.9.4
     - pip
     - poetry-core
     - python
@@ -37,8 +37,8 @@ requirements:
     - python
     - requests
     - safe-pysha3
-    - web3 >=6.0.0,<7.0.0  # [py <= 310]
-    - web3 >=7.0.0,<7.6.0  # [py > 310]
+    - web3 >=6.0.0,<7.0.0  # [py <= 312]
+    - web3 >=7.0.0,<7.6.0  # [py > 312]
 
 test:
   imports:
