@@ -28,7 +28,8 @@ requirements:
   run:
     - bech32
     - bip32
-    - ckzg <2
+    - ckzg <2 # [py < 313]
+    - ckzg  # [py >= 313]
     - ecdsa
     - eip712
     - eth-abi
@@ -37,8 +38,8 @@ requirements:
     - python
     - requests
     - safe-pysha3
-    - web3 >=6.0.0,<7.0.0  # [py <= 312]
-    - web3 >=7.0.0,<7.6.0  # [py > 312]
+    - web3 >=6.0.0,<7.0.0  # [py < 313]
+    - web3 >=7.0.0,<7.6.0  # [py >= 313]
 
 test:
   imports:

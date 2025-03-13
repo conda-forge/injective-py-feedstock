@@ -2,7 +2,7 @@ diff --git a/pyproject.toml b/pyproject.toml
 index 767c9e8..c987bbe 100644
 --- a/pyproject.toml
 +++ b/pyproject.toml
-@@ -29,10 +29,8 @@
+@@ -29,10 +29,9 @@
  eip712 = "*"
  grpcio = "*"
 -grpcio-tools = "*"
@@ -13,5 +13,7 @@ index 767c9e8..c987bbe 100644
  safe-pysha3 = "*"
 -websockets = "*"
 -web3 = "^7.0.0"
-+web3 = { version = "^6.0", markers = "python_version < '3.12'" }
-+web3 = { version = "^7.0", markers = "python_version >= '3.12'" }
++web3 = [
++    { version = "^6.0", python = "< 3.13"},
++    { version = "^7.0", python = ">= 3.13"}
++]
