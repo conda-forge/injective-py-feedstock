@@ -28,7 +28,7 @@ requirements:
   run:
     - bech32
     - bip32
-    - ckzg <2 # [py < 313]
+    - ckzg <2  # [py < 313]
     - ckzg  # [py >= 313]
     - ecdsa
     - eip712
