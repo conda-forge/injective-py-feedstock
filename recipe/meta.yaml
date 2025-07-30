@@ -1,14 +1,14 @@
 {% set name = "injective-py" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
-{% set python_min = 3.9 %}
+{% set python_min = "3.10" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://github.com/InjectiveLabs/sdk-python/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: cd542ef7c6c332d2e25957825a90bcbd199aa851b24f95a2d47abf237e2e251e
+  sha256: 5408f4533411db61bdb444341ad90458a8541e0badbd65d687ede10380b9904e
 
 build:
   noarch: python
@@ -32,7 +32,7 @@ requirements:
     - grpcio-tools
     - hdwallets
     - mnemonic
-    - protobuf
+    - protobuf <6.0.0,>=5.26.1
     - python >={{ python_min }}
     - requests
     - safe-pysha3
