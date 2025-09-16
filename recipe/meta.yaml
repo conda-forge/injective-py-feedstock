@@ -1,5 +1,5 @@
 {% set name = "injective-py" %}
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 
 {% set python_min = "3.10" %}
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/InjectiveLabs/sdk-python/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5408f4533411db61bdb444341ad90458a8541e0badbd65d687ede10380b9904e
+  sha256: 62df0ec70cfffb98182052f6bcd25729d4c5c70c030aa659fc447934cde53835
 
 build:
   noarch: python
@@ -51,7 +51,7 @@ test:
     - pytest
     - pytest-asyncio
     - pytest-grpc
-    - python {{ python_min }}
+    - python {{ python_min }}.*
     - requests-mock
   commands:
     - pip check
